@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Dubai Water Finder Design System - Fresh, friendly, sustainable */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Water & Sustainability Theme */
+    --background: 210 100% 98%;
+    --foreground: 210 60% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Water-inspired Blues */
+    --primary: 200 98% 46%; /* Fresh water blue */
+    --primary-foreground: 210 100% 98%;
+    --primary-glow: 200 98% 60%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Nature-inspired Greens */
+    --secondary: 160 84% 39%; /* Sustainable green */
+    --secondary-foreground: 210 100% 98%;
+    --secondary-glow: 160 84% 50%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft Backgrounds */
+    --card: 210 100% 99%;
+    --card-foreground: 210 60% 15%;
+    
+    --popover: 210 100% 99%;
+    --popover-foreground: 210 60% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Subtle Accents */
+    --muted: 210 60% 96%;
+    --muted-foreground: 210 30% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 200 60% 95%;
+    --accent-foreground: 200 98% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Interactive Elements */
+    --border: 210 40% 90%;
+    --input: 210 40% 94%;
+    --ring: 200 98% 46%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors */
+    --success: 160 84% 39%;
+    --success-foreground: 210 100% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Gradients */
+    --gradient-water: linear-gradient(135deg, hsl(200 98% 46%) 0%, hsl(160 84% 39%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(210 100% 98%) 0%, hsl(200 80% 95%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(200 98% 92%) 0%, hsl(160 84% 92%) 100%);
 
-    --radius: 0.5rem;
+    /* Shadows */
+    --shadow-water: 0 10px 25px -5px hsl(200 98% 46% / 0.3);
+    --shadow-green: 0 10px 25px -5px hsl(160 84% 39% / 0.3);
+    --shadow-soft: 0 4px 20px -2px hsl(210 40% 50% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +125,63 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-sky);
+  }
+}
+
+@layer components {
+  /* Gradient Components */
+  .gradient-water {
+    background: var(--gradient-water);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  /* Interactive Elements */
+  .water-shadow {
+    box-shadow: var(--shadow-water);
+  }
+  
+  .green-shadow {
+    box-shadow: var(--shadow-green);
+  }
+  
+  .soft-shadow {
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Animations */
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+
+  /* Water droplet floating animation */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Pulse effect for pins */
+  .pulse-water {
+    animation: pulse-water 2s infinite;
+  }
+  
+  @keyframes pulse-water {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 10px hsl(var(--primary) / 0);
+    }
   }
 }
