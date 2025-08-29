@@ -4,7 +4,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { SearchAndFilter } from '@/components/SearchAndFilter';
-import { MapView } from '@/components/MapView';
+import { GoogleMap } from '@/components/GoogleMap';
 import { AboutSection } from '@/components/AboutSection';
 import { waterStations, getStationsByFilter, WaterStation } from '@/data/waterStations';
 
@@ -131,9 +131,10 @@ const Index = () => {
           </div>
 
           {/* Map */}
-          <MapView 
+          <GoogleMap 
             stations={filteredStations}
             userLocation={userLocation}
+            apiKey="YOUR_API_KEY"
           />
 
           {/* Results Summary */}
@@ -158,7 +159,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-card/30 backdrop-blur-sm border-t border-border/50">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-2 text-foreground">Dubai Water Finder</h3>
+            <h3 className="text-lg font-semibold mb-2 text-foreground">Project Refill Filter Finder</h3>
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
               Promoting sustainable hydration and reducing plastic waste across Dubai, 
               one refill at a time.
