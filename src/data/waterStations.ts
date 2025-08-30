@@ -15,7 +15,7 @@ export interface WaterStation {
 export const waterStations: WaterStation[] = [
   {
     id: '1',
-    name: 'JLT - Almas East Lake',
+    name: 'JLT Almas East Lake Water Filter',
     lat: 25.070561,
     lng: 55.139835,
     address: 'Jumeirah Lake Towers, Almas East Lake',
@@ -27,7 +27,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '2',
-    name: 'JBR - The Beach',
+    name: 'JBR The Beach Water Filter',
     lat: 25.208246,
     lng: 55.271794,
     address: 'Jumeirah Beach Residence, The Beach',
@@ -39,7 +39,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '3',
-    name: 'Jumeirah 2 (near Jumeirah Beach Park)',
+    name: 'Jumeirah Beach Park Water Filter',
     lat: 25.205154,
     lng: 55.24038,
     address: 'Jumeirah 2, near Jumeirah Beach Park',
@@ -51,7 +51,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '4',
-    name: 'City Walk',
+    name: 'City Walk Water Filter',
     lat: 25.217716,
     lng: 55.251265,
     address: 'City Walk, Al Wasl',
@@ -63,7 +63,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '5',
-    name: 'Business Bay (Al Habtoor City)',
+    name: 'Business Bay Al Habtoor City Water Filter',
     lat: 25.184427,
     lng: 55.256227,
     address: 'Business Bay, Al Habtoor City vicinity',
@@ -75,7 +75,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '6',
-    name: 'Business Bay (Canal Promenade)',
+    name: 'Business Bay Canal Promenade Water Filter',
     lat: 25.18356,
     lng: 55.260123,
     address: 'Business Bay, Canal Promenade',
@@ -87,7 +87,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '7',
-    name: 'Al Ras (Deira)',
+    name: 'Al Ras Deira Water Filter',
     lat: 25.26704,
     lng: 55.2964,
     address: 'Al Ras, Deira',
@@ -99,7 +99,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '8',
-    name: 'Al Daghaya / Gold Souk',
+    name: 'Gold Souk Al Daghaya Water Filter',
     lat: 25.270358,
     lng: 55.298675,
     address: 'Al Daghaya, Gold Souk area',
@@ -111,7 +111,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '9',
-    name: 'Jumeirah Public Beach',
+    name: 'Jumeirah Public Beach Water Filter',
     lat: 25.204411,
     lng: 55.265129,
     address: 'Jumeirah Public Beach',
@@ -123,7 +123,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '10',
-    name: 'Dubai Mall',
+    name: 'Dubai Mall Water Filter',
     lat: 25.1975,
     lng: 55.2744,
     address: 'Dubai Mall, Downtown Dubai',
@@ -135,7 +135,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '11',
-    name: 'Mall of the Emirates',
+    name: 'Mall of the Emirates Water Filter',
     lat: 25.1184,
     lng: 55.2001,
     address: 'Mall of the Emirates, Al Barsha',
@@ -147,7 +147,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '12',
-    name: 'Dubai International Airport T3',
+    name: 'Dubai Airport Terminal 3 Water Filter',
     lat: 25.2532,
     lng: 55.3657,
     address: 'Dubai International Airport, Terminal 3',
@@ -159,7 +159,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '13',
-    name: 'Kite Beach',
+    name: 'Kite Beach Water Filter',
     lat: 25.2096,
     lng: 55.2662,
     address: 'Kite Beach, Umm Suqeim',
@@ -171,7 +171,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '14',
-    name: 'Dubai Fountain Area',
+    name: 'Dubai Fountain Area Water Filter',
     lat: 25.1951,
     lng: 55.2744,
     address: 'Dubai Fountain, Downtown Dubai',
@@ -183,7 +183,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '15',
-    name: 'Atlantis The Palm',
+    name: 'Atlantis The Palm Water Filter',
     lat: 25.1306,
     lng: 55.1167,
     address: 'Atlantis The Palm, Palm Jumeirah',
@@ -195,7 +195,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '16',
-    name: 'Ibn Battuta Mall',
+    name: 'Ibn Battuta Mall Water Filter',
     lat: 25.0444,
     lng: 55.1167,
     address: 'Ibn Battuta Mall, Jebel Ali',
@@ -207,7 +207,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '17',
-    name: 'La Mer Beach',
+    name: 'La Mer Beach Water Filter',
     lat: 25.2025,
     lng: 55.2774,
     address: 'La Mer, Jumeirah',
@@ -219,7 +219,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '18',
-    name: 'Dubai Creek Park',
+    name: 'Dubai Creek Park Water Filter',
     lat: 25.2446,
     lng: 55.3267,
     address: 'Dubai Creek Park, Creek Area',
@@ -231,7 +231,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '19',
-    name: 'Global Village',
+    name: 'Global Village Water Filter',
     lat: 25.0708,
     lng: 55.3117,
     address: 'Global Village, Dubai Land',
@@ -243,7 +243,7 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '20',
-    name: 'Dubai Marina Mall',
+    name: 'Dubai Marina Mall Water Filter',
     lat: 25.0785,
     lng: 55.1396,
     address: 'Dubai Marina Mall, Marina',
@@ -264,7 +264,9 @@ export const getStationsByFilter = (filter: 'closest' | '24/7' | 'free' | 'all')
         station.type === 'free' || station.type === 'both'
       );
     case 'closest':
-      return waterStations.sort((a, b) => (a.distance || 0) - (b.distance || 0));
+      return waterStations
+        .sort((a, b) => (a.distance || 0) - (b.distance || 0))
+        .slice(0, 2);
     default:
       return waterStations;
   }
