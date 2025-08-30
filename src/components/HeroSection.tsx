@@ -13,10 +13,10 @@ export const HeroSection = ({ onLocationRequest, hasLocation }: HeroSectionProps
   const [welcomeMessage, setWelcomeMessage] = useState("Stay hydrated, Dubai!");
 
   const messages = [
-    "Stay hydrated, Dubai! 💧",
-    "Find fresh water nearby! 🌊",
-    "Eco-friendly hydration awaits! 🌱",
-    "Your health, our mission! ❤️"
+    "Stay hydrated, Dubai!",
+    "Find fresh water nearby!",
+    "Eco-friendly hydration awaits!",
+    "Your health, our mission!"
   ];
 
   useEffect(() => {
@@ -33,10 +33,10 @@ export const HeroSection = ({ onLocationRequest, hasLocation }: HeroSectionProps
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Stay Hydrated,
+              Welcome to
             </span>
             <br />
-            <span className="text-foreground">Dubai!</span>
+            <span className="text-foreground">AquaSpot</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Discover the nearest public water filters and refill stations in Dubai. 

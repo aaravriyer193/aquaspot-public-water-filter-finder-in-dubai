@@ -22,9 +22,9 @@ export const Header = () => {
               <MapPin className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Project Refill Filter Finder</h1>
+              <h1 className="text-xl font-bold text-foreground">AquaSpot</h1>
               <Badge variant="outline" className="text-xs bg-accent/50">
-                Stay Hydrated!
+                Stay Hydrated
               </Badge>
             </div>
           </div>
