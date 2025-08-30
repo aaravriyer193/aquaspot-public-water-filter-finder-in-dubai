@@ -29,7 +29,7 @@ export const LeafletMap = ({ stations, userLocation, className = "" }: LeafletMa
 
     mapInstanceRef.current = map;
 
-    // Add OpenStreetMap tiles
+    // Add OpenStreetMap tiles (English by default)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
@@ -76,7 +76,7 @@ export const LeafletMap = ({ stations, userLocation, className = "" }: LeafletMa
         .addTo(map);
 
       const popupContent = `
-        <div class="p-2 min-w-48">
+        <div class="p-3 min-w-56 max-w-xs">
           <h3 class="font-semibold text-sm mb-2">${station.name}</h3>
           <p class="text-xs text-gray-600 mb-2">${station.address}</p>
           <div class="flex items-center gap-2 mb-2">
@@ -91,9 +91,9 @@ export const LeafletMap = ({ stations, userLocation, className = "" }: LeafletMa
           </div>
           <button 
             onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=${station.lat},${station.lng}', '_blank')"
-            class="w-full bg-blue-500 text-white text-xs py-1 px-2 rounded hover:bg-blue-600 transition-colors"
+            class="w-full bg-blue-500 text-white text-xs py-2 px-3 rounded hover:bg-blue-600 transition-colors font-medium"
           >
-            Get Directions
+            Navigate Here
           </button>
         </div>
       `;
@@ -110,5 +110,5 @@ export const LeafletMap = ({ stations, userLocation, className = "" }: LeafletMa
     };
   }, [stations, userLocation]);
 
-  return <div ref={mapRef} className={`w-full h-96 rounded-lg overflow-hidden ${className}`} />;
+  return <div ref={mapRef} className={`w-full h-[70vh] md:h-96 rounded-lg overflow-hidden ${className}`} />;
 };

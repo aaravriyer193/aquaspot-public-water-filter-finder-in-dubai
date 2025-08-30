@@ -88,7 +88,7 @@ export const HeroSection = ({ onLocationRequest, hasLocation }: HeroSectionProps
         {/* Quick Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
           <div className="bg-card/60 backdrop-blur-sm rounded-lg p-4">
-            <div className="text-2xl font-bold text-primary mb-1">50+</div>
+            <div className="text-2xl font-bold text-primary mb-1">20+</div>
             <div className="text-sm text-muted-foreground">Water Stations</div>
           </div>
           <div className="bg-card/60 backdrop-blur-sm rounded-lg p-4">

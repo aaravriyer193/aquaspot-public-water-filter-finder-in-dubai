@@ -87,18 +87,6 @@ export const waterStations: WaterStation[] = [
   },
   {
     id: '7',
-    name: 'Downtown / Burj Khalifa',
-    lat: 25.193433,
-    lng: 55.274081,
-    address: 'Downtown Dubai, Burj Khalifa area',
-    type: 'free',
-    hours: 'Currently closed',
-    is24_7: false,
-    availability: 'maintenance',
-    amenities: ['Iconic location', 'High capacity', 'Tourist friendly']
-  },
-  {
-    id: '8',
     name: 'Al Ras (Deira)',
     lat: 25.26704,
     lng: 55.2964,
@@ -110,7 +98,7 @@ export const waterStations: WaterStation[] = [
     amenities: ['Historic area', 'Traditional souks nearby', 'Public access']
   },
   {
-    id: '9',
+    id: '8',
     name: 'Al Daghaya / Gold Souk',
     lat: 25.270358,
     lng: 55.298675,
@@ -122,7 +110,7 @@ export const waterStations: WaterStation[] = [
     amenities: ['Shopping district', 'Tourist area', 'Cultural heritage']
   },
   {
-    id: '10',
+    id: '9',
     name: 'Jumeirah Public Beach',
     lat: 25.204411,
     lng: 55.265129,
@@ -132,6 +120,138 @@ export const waterStations: WaterStation[] = [
     is24_7: true,
     availability: 'available',
     amenities: ['Beachside location', 'UV sterilization', 'Cold water']
+  },
+  {
+    id: '10',
+    name: 'Dubai Mall',
+    lat: 25.1975,
+    lng: 55.2744,
+    address: 'Dubai Mall, Downtown Dubai',
+    type: 'both',
+    hours: '10:00 - 24:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Shopping mall', 'Multiple locations', 'Family friendly']
+  },
+  {
+    id: '11',
+    name: 'Mall of the Emirates',
+    lat: 25.1184,
+    lng: 55.2001,
+    address: 'Mall of the Emirates, Al Barsha',
+    type: 'both',
+    hours: '10:00 - 24:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Shopping mall', 'Food court area', 'Premium filtering']
+  },
+  {
+    id: '12',
+    name: 'Dubai International Airport T3',
+    lat: 25.2532,
+    lng: 55.3657,
+    address: 'Dubai International Airport, Terminal 3',
+    type: 'free',
+    hours: '24/7',
+    is24_7: true,
+    availability: 'available',
+    amenities: ['Airport location', 'Traveler friendly', 'Multiple stations']
+  },
+  {
+    id: '13',
+    name: 'Kite Beach',
+    lat: 25.2096,
+    lng: 55.2662,
+    address: 'Kite Beach, Umm Suqeim',
+    type: 'free',
+    hours: '24/7',
+    is24_7: true,
+    availability: 'available',
+    amenities: ['Beach location', 'Sports area', 'Outdoor activities']
+  },
+  {
+    id: '14',
+    name: 'Dubai Fountain Area',
+    lat: 25.1951,
+    lng: 55.2744,
+    address: 'Dubai Fountain, Downtown Dubai',
+    type: 'free',
+    hours: '24/7',
+    is24_7: true,
+    availability: 'available',
+    amenities: ['Tourist hotspot', 'Fountain views', 'High capacity']
+  },
+  {
+    id: '15',
+    name: 'Atlantis The Palm',
+    lat: 25.1306,
+    lng: 55.1167,
+    address: 'Atlantis The Palm, Palm Jumeirah',
+    type: 'refill',
+    hours: '06:00 - 23:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Resort area', 'Premium location', 'Tourist area']
+  },
+  {
+    id: '16',
+    name: 'Ibn Battuta Mall',
+    lat: 25.0444,
+    lng: 55.1167,
+    address: 'Ibn Battuta Mall, Jebel Ali',
+    type: 'both',
+    hours: '10:00 - 24:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Large mall', 'Theme courts', 'Multiple stations']
+  },
+  {
+    id: '17',
+    name: 'La Mer Beach',
+    lat: 25.2025,
+    lng: 55.2774,
+    address: 'La Mer, Jumeirah',
+    type: 'free',
+    hours: '24/7',
+    is24_7: true,
+    availability: 'available',
+    amenities: ['Beach destination', 'Entertainment area', 'Family zone']
+  },
+  {
+    id: '18',
+    name: 'Dubai Creek Park',
+    lat: 25.2446,
+    lng: 55.3267,
+    address: 'Dubai Creek Park, Creek Area',
+    type: 'free',
+    hours: '08:00 - 23:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Park setting', 'Green space', 'Family area']
+  },
+  {
+    id: '19',
+    name: 'Global Village',
+    lat: 25.0708,
+    lng: 55.3117,
+    address: 'Global Village, Dubai Land',
+    type: 'both',
+    hours: '16:00 - 01:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Entertainment complex', 'Cultural pavilions', 'Seasonal venue']
+  },
+  {
+    id: '20',
+    name: 'Dubai Marina Mall',
+    lat: 25.0785,
+    lng: 55.1396,
+    address: 'Dubai Marina Mall, Marina',
+    type: 'both',
+    hours: '10:00 - 24:00',
+    is24_7: false,
+    availability: 'available',
+    amenities: ['Marina location', 'Waterfront views', 'Shopping area']
   }
 ];
 
@@ -140,7 +260,9 @@ export const getStationsByFilter = (filter: 'closest' | '24/7' | 'free' | 'all')
     case '24/7':
       return waterStations.filter(station => station.is24_7);
     case 'free':
-      return waterStations.filter(station => station.type === 'free' || station.type === 'both');
+      return waterStations.filter(station => 
+        station.type === 'free' || station.type === 'both'
+      );
     case 'closest':
       return waterStations.sort((a, b) => (a.distance || 0) - (b.distance || 0));
     default:
