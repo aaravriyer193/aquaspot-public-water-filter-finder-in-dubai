@@ -90,7 +90,7 @@ export const LeafletMap = ({ stations, userLocation, className = "" }: LeafletMa
             <strong>Type:</strong> ${station.type === 'both' ? 'Free & Refill' : station.type}
           </div>
           <button 
-            onclick="window.open('https://maps.google.com/maps?daddr=${station.lat},${station.lng}', '_blank')"
+            onclick="window.open('https://maps.google.com/maps?q=${encodeURIComponent(station.name)}', '_blank')"
             class="w-full bg-blue-500 text-white text-xs py-2 px-3 rounded hover:bg-blue-600 transition-colors font-medium"
           >
             Navigate Here

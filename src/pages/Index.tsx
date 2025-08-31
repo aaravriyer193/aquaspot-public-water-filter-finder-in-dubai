@@ -53,7 +53,7 @@ const Index = () => {
 
   const handleFilter = (filter: 'all' | 'closest' | '24/7' | 'free') => {
     setCurrentFilter(filter);
-    let filtered = getStationsByFilter(filter);
+    let filtered = getStationsByFilter(filter, userLocation);
     
     if (searchQuery) {
       filtered = filtered.filter(station => 
@@ -72,7 +72,7 @@ const Index = () => {
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    let filtered = getStationsByFilter(currentFilter);
+    let filtered = getStationsByFilter(currentFilter, userLocation);
     
     if (query) {
       filtered = filtered.filter(station => 
