@@ -157,15 +157,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-4 bg-card/30 backdrop-blur-sm border-t border-border/50">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-2 text-foreground">AquaSpot</h3>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Promoting sustainable hydration and reducing plastic waste across Dubai, 
-              one refill at a time.
-            </p>
-          </div>
-          <div className="text-xs text-muted-foreground">
-            <p>Built for a sustainable Dubai • Free public service • Contact: projectrefill.ae@gmail.com</p>
+          <div className="text-sm text-muted-foreground">
+            <p>Made by AARAV IYER from project refill.net</p>
           </div>
         </div>
       </footer>
