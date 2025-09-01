@@ -158,7 +158,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-card/30 backdrop-blur-sm border-t border-border/50">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-sm text-muted-foreground">
-            <p>Made by AARAV IYER from project <a href="https://refill.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">refill.net</a></p>
+            <p>Made by AARAV IYER from project <a href="https://projectrefill.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">projectrefill.net</a></p>
           </div>
         </div>
       </footer>
